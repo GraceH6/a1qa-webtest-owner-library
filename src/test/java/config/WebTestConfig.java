@@ -18,6 +18,7 @@ public interface WebTestConfig extends Config {
     String getBrowserVersion();
 
     @Key("remoteWebDriver")
+    @DefaultValue("false")
     Boolean getRemoteWebDriver();
 
     @Key("remoteUrl")

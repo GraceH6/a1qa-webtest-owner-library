@@ -13,6 +13,7 @@ public class TestBase {
         Configuration.browser = config.getBrowser();
         Configuration.baseUrl = config.getBaseUrl();
         Configuration.browserVersion = config.getBrowserVersion();
+        Configuration.pageLoadStrategy = "eager";
 
         if (config.getRemoteWebDriver())
             Configuration.remote = config.gerRemoteUrl();
